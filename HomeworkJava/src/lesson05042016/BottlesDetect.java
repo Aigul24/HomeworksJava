@@ -14,13 +14,13 @@ public class BottlesDetect {
 			System.out.println(argString);
 			int x = Integer.parseInt(args[0]);
 			if (x == 5) {
-				System.out.println("Мало");
+				System.out.println("Few");
 			} else if (x == 2) {
-				System.out.println("Много");
+				System.out.println("A lot");
 			} else if (x == 1) {
-				System.out.println("В самый раз!");
+				System.out.println("It's okay");
 			} else {
-				System.out.println("Непонятно...");
+				System.out.println("Please, repeat");
 			}
 		}
 	}
