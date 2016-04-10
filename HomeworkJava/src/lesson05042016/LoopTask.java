@@ -10,10 +10,10 @@ public class LoopTask {
 		}
 
 		int x = Integer.parseInt(args[0]);
-		System.out.println(x);
+		System.out.println("Переводим число " + x + " в двоичную систему");
 		while (x != 0) {
 			System.out.println(x % 2);
-			x = x / 2;
+			x = x >> 1;
 		}
 	}
 }
