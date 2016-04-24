@@ -10,14 +10,14 @@ public class Matrix3D {
 
 				}, };
 
-		OUTER: for (int i = 0; i < matrix.length; i++) {
-			for (int j = 0; j < matrix[i].length; j++) {
-				for (int k = 0; k < matrix[i][j].length; k++) {
-					if (matrix[i][j][k] == 0) {
-						System.out.println(i);
+		System.out.println("Слои, которые содержат 0: ");
+		OUTER: for (int layer = 0; layer < matrix.length; layer++) {
+			for (int row = 0; row < matrix[layer].length; row++) {
+				for (int coloumn = 0; coloumn < matrix[layer][row].length; coloumn++) {
+					if (matrix[layer][row][coloumn] == 0) {
+						System.out.println(layer);
 						continue OUTER;
 					}
-
 				}
 			}
 
